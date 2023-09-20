@@ -7,6 +7,35 @@
 </head>
 <body>
     <h1>Homepage</h1>
-    <a>click me</a>
+    <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click me</a>
+    <!-- <a href="DESTINATION" target="_blank" rel="noopener noreferrer" -->
+    <!-- target"_blank" opens link in a new tab, rel="noopener noreferrer" is in place for security reasons -->
+    <!-- for good practice, always add this rel tag to provide security
+    noreferrer prevents the opened link from knowing which webpage or resource
+    has a link or reference to it. 
+    noopener prevents the opened link from gaining acces to the webpage
+    from which it opened. It's to protect against phishing.
+    This is referred to as tabnabbing. INCLUDE THIS IN ALL LINKS TO
+    OTHER PAGES -->
+    <!-- Without this security, the webpage is vulnerable to window.opener
+    API exploitation attacks. Most modern broswers have this security built in
+    but as good practice, always include it. -->
+
+    <!-- Two types of links, absolute and relative links
+    1. Links to pages on other websites/the internet
+    2. Links to pages located on our own websites
+
+    Absolute links are links to other websites on the internet
+    https://www.theodinproject.com/about
+    protocol:://domain/path
+
+    Relative links are links to pages within our own website.
+    these links do not include a domain name as it assumes the domain name is the same
+    -->
+
+   <p><a href="./pages/about.html" target="_blank" rel="noopener noreferrer">About</a></p>
+    <!-- Adding ./directory/page.hmtl
+    the ./ specifies to the code that it should look for the
+    file/directory relative to the current directory -->
 </body>
 </html>
